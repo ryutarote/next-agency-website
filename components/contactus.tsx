@@ -53,7 +53,7 @@ const ContactUs: React.FC = () => {
 	}, []);
 
 	const handleSubmit = useCallback(
-		(e) => {
+		(e: { preventDefault: () => void }) => {
 			e.preventDefault();
 			setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
 			axios({
