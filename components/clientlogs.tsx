@@ -5,67 +5,101 @@ import Image from 'next/image';
 const ClientLogs: React.FC = () => (
 	<>
 		<SliderContainer className='' contentWidth={1290} initialOffSet={0}>
-			<Image
-				src='/assets/customer/const.png'
-				width={150}
-				height={50}
-				alt='const'
-				objectFit='contain'
-			/>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/const.png'
+					width={100}
+					height={50}
+					alt='const'
+					objectFit='contain'
+				/>
+			</SliderItem>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/sun.png'
+					width={100}
+					height={50}
+					alt='sun'
+					objectFit='contain'
+				/>
+			</SliderItem>
 
-			<Image
-				src='/assets/customer/sun.png'
-				width={150}
-				height={50}
-				alt='sun'
-				objectFit='contain'
-			/>
-			<Image
-				src='/assets/customer/point.png'
-				width={150}
-				height={50}
-				alt='point'
-				objectFit='contain'
-			/>
-			<Image
-				src='/assets/customer/surge.png'
-				width={150}
-				height={50}
-				alt='surge'
-				objectFit='contain'
-			/>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/surge.png'
+					width={100}
+					height={50}
+					alt='surge'
+					objectFit='contain'
+				/>
+			</SliderItem>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/awe.png'
+					width={150}
+					height={50}
+					alt='awe'
+					objectFit='contain'
+				/>
+			</SliderItem>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/eo.png'
+					width={100}
+					height={50}
+					alt='eo'
+					objectFit='contain'
+				/>
+			</SliderItem>
 
-			<Image
-				src='/assets/customer/eo.png'
-				width={150}
-				height={50}
-				alt='eo'
-				objectFit='contain'
-			/>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/hono.png'
+					width={100}
+					height={50}
+					alt='hono'
+					objectFit='contain'
+				/>
+			</SliderItem>
 
-			<Image
-				src='/assets/customer/hono.png'
-				width={150}
-				height={50}
-				alt='hono'
-				objectFit='contain'
-			/>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/acidus.png'
+					width={100}
+					height={50}
+					alt='acidus'
+					objectFit='contain'
+				/>
+			</SliderItem>
 
-			<Image
-				src='/assets/customer/acidus.png'
-				width={150}
-				height={50}
-				alt='acidus'
-				objectFit='contain'
-			/>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/dev.png'
+					width={100}
+					height={50}
+					alt='dev'
+					objectFit='contain'
+				/>
+			</SliderItem>
 
-			<Image
-				src='/assets/customer/rab.png'
-				width={150}
-				height={50}
-				alt='rab'
-				objectFit='contain'
-			/>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/rab.png'
+					width={100}
+					height={50}
+					alt='rab'
+					objectFit='contain'
+				/>
+			</SliderItem>
+			<SliderItem width={100}>
+				<Image
+					src='/assets/customer/point.png'
+					width={100}
+					height={50}
+					alt='point'
+					objectFit='contain'
+				/>
+			</SliderItem>
 		</SliderContainer>
 	</>
 );
