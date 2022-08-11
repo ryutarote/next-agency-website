@@ -16,7 +16,7 @@ const ContactUs: React.FC = () => {
 	});
 
 	const handleOnChange = useCallback(
-		(e: { persist: () => void; target: { id: number; value: any } }) => {
+		(e: { persist: () => void; target: { id: number; value: unknown } }) => {
 			e.persist();
 			setInputs((prev) => ({
 				...prev,
