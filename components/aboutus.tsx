@@ -13,7 +13,7 @@ const AboutUs: React.FC = () => {
 			<div className='container mx-auto px-11 text-center mt-28'>
 				<h2>Our team</h2>
 				<div className='mt-2'>the &ldquo;user-oriented&rdquo;</div>
-				<div className='mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20'>
+				<div className='mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 lg:gap-20'>
 					<Member
 						id='Ben'
 						name='Ben'
