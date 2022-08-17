@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
 				<div className='leading-tight max-w-5xl mx-auto text-4xl tracking-tight'>
 					<strong>We will help you ship your decent journey.</strong>
 					{''}
-					<h4>Our team of experts will promise your success.</h4>
+					<h5>Our team of experts will promise your success.</h5>
 				</div>
 			</div>
 			<div className='container mx-auto px-11 text-center mt-28'>
