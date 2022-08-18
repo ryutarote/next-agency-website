@@ -15,21 +15,18 @@ const ContactUs: React.FC = () => {
 		message: '',
 	});
 
-	const handleOnChange = useCallback(
-		(e: { persist: () => void; target: { id: any; value: any } }) => {
-			e.persist();
-			setInputs((prev) => ({
-				...prev,
-				[e.target.id]: e.target.value,
-			}));
-			setStatus({
-				submitted: false,
-				submitting: false,
-				info: { error: false, msg: null },
-			});
-		},
-		[]
-	);
+	const handleOnChange = useCallback((e) => {
+		e.persist();
+		setInputs((prev) => ({
+			...prev,
+			[e.target.id]: e.target.value,
+		}));
+		setStatus({
+			submitted: false,
+			submitting: false,
+			info: { error: false, msg: null },
+		});
+	}, []);
 
 	const handleServerResponse = useCallback((ok: any, msg: any) => {
 		if (ok) {
@@ -53,7 +50,7 @@ const ContactUs: React.FC = () => {
 	}, []);
 
 	const handleSubmit = useCallback(
-		(e: { preventDefault: () => void }) => {
+		(e) => {
 			e.preventDefault();
 			setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
 			axios({
