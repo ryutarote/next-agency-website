@@ -36,7 +36,7 @@ const ContactUs: React.FC = () => {
 			setStatus({
 				submitted: true,
 				submitting: false,
-				info: { error: false, msg: null },
+				info: { error: false, msg: msg },
 			});
 			setInputs({
 				companyName: '',
