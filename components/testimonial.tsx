@@ -31,8 +31,10 @@ const Testimonial: React.FC = () => (
 		</CarouselItem>
 		<CarouselItem index={4}>
 			<Review by='Folister (Quest animals)'>
-				Burnavy&apos;s relentless pursuit of knowledge and touring in the
-				busines has led to countless journey all across the globe.
+				<div>
+					Burnavy&apos;s relentless pursuit of knowledge and touring in the
+					busines has led to countless journey all across the globe.
+				</div>
 			</Review>
 		</CarouselItem>
 	</Carousel>
