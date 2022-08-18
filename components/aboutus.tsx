@@ -5,7 +5,7 @@ const AboutUs: React.FC = () => {
 	return (
 		<section className={'flex flex-col bg-white py-20 text-3xl md:text-4xl'}>
 			<div className='container mx-auto px-11'>
-				<div className='leading-tight max-w-5xl mx-auto text-4xl tracking-tight'>
+				<div className='leading-tight max-w-5xl mx-auto text-4xl tracking-tight text-center'>
 					<strong>We will help you ship your decent journey.</strong>
 					{''}
 					<h5>Our team of experts will promise your success.</h5>
