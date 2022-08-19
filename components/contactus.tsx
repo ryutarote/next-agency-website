@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, FormEvent } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
 
@@ -50,7 +50,7 @@ const ContactUs: React.FC = () => {
 	}, []);
 
 	const handleSubmit = useCallback(
-		(e) => {
+		(e: FormEvent<HTMLFormElement>) => {
 			e.preventDefault();
 			setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
 			axios({
