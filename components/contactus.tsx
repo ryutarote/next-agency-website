@@ -1,4 +1,4 @@
-import React, { useState, useCallback, FormEvent } from 'react';
+import React, { useState, useCallback, FormEvent, ChangeEvent } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
 
@@ -16,7 +16,7 @@ const ContactUs: React.FC = () => {
 	});
 
 	const handleOnChange = useCallback(
-		(e: { persist: () => void; target: { id: any; value: any } }) => {
+		(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
 			e.persist();
 			setInputs((prev) => ({
 				...prev,
