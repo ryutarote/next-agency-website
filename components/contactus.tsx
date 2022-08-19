@@ -15,8 +15,8 @@ const ContactUs: React.FC = () => {
 		message: '',
 	});
 
-	const handleOnChange: React.ChangeEventHandler<HTMLInputElement> =
-		useCallback((e) => {
+	const handleOnChange = useCallback(
+		(e: React.ChangeEvent<HTMLInputElement>) => {
 			e.persist();
 			setInputs((prev) => ({
 				...prev,
@@ -27,7 +27,9 @@ const ContactUs: React.FC = () => {
 				submitting: false,
 				info: { error: false, msg: null },
 			});
-		}, []);
+		},
+		[]
+	);
 
 	const handleServerResponse = useCallback((ok: any, msg: any) => {
 		if (ok) {
