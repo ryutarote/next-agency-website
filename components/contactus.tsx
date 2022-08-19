@@ -15,18 +15,19 @@ const ContactUs: React.FC = () => {
 		message: '',
 	});
 
-	const handleOnChange = useCallback((e) => {
-		e.persist();
-		setInputs((prev) => ({
-			...prev,
-			[e.target.id]: e.target.value,
-		}));
-		setStatus({
-			submitted: false,
-			submitting: false,
-			info: { error: false, msg: null },
-		});
-	}, []);
+	const handleOnChange: React.ChangeEventHandler<HTMLInputElement> =
+		useCallback((e) => {
+			e.persist();
+			setInputs((prev) => ({
+				...prev,
+				[e.target.id]: e.target.value,
+			}));
+			setStatus({
+				submitted: false,
+				submitting: false,
+				info: { error: false, msg: null },
+			});
+		}, []);
 
 	const handleServerResponse = useCallback((ok: any, msg: any) => {
 		if (ok) {
