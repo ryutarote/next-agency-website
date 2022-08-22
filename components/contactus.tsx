@@ -16,7 +16,7 @@ const ContactUs: React.FC = () => {
 	});
 
 	const handleOnChange = useCallback(
-		(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+		(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
 			e.persist();
 			setInputs((prev) => ({
 				...prev,
@@ -31,7 +31,7 @@ const ContactUs: React.FC = () => {
 		[]
 	);
 
-	const handleServerResponse = useCallback((ok: any, msg: any) => {
+	const handleServerResponse = useCallback((ok: boolean, msg: any) => {
 		if (ok) {
 			setStatus({
 				submitted: true,
@@ -53,7 +53,7 @@ const ContactUs: React.FC = () => {
 	}, []);
 
 	const handleSubmit = useCallback(
-		(e: FormEvent<HTMLFormElement>) => {
+		(e: React.FormEvent<HTMLFormElement>) => {
 			e.preventDefault();
 			setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
 			axios({
@@ -80,6 +80,7 @@ const ContactUs: React.FC = () => {
 						alt='logo'></Image>
 				</div>
 				<h2 className='fonnt-bold text-4xl'>Contact Us</h2>
+				<input onChange={(e) => console.log(e.target.value)}></input>
 				<form
 					onSubmit={handleSubmit}
 					className='mt-16 flex min-w-full flex-col gap-4 px-10 lg:mt-20 lg:min-w-[500px]'>
