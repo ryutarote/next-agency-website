@@ -60,12 +60,16 @@ const ContactUs: React.FC = () => {
 				method: 'POST',
 				url: process.env.NEXT_PUBLIC_CONTACT_FORM_ENDPOINT_URL,
 				data: inputs,
-			}).then((_response) => {
-				handleServerResponse(
-					true,
-					'Thank you, your message has been submitted!'
-				);
-			});
+			})
+				.then((_response) => {
+					handleServerResponse(
+						true,
+						'Thank you, your message has been submitted!'
+					);
+				})
+				.catch((error) => {
+					handleServerResponse(false, error.response.data.error);
+				});
 		},
 		[inputs, handleServerResponse]
 	);
@@ -80,7 +84,6 @@ const ContactUs: React.FC = () => {
 						alt='logo'></Image>
 				</div>
 				<h2 className='fonnt-bold text-4xl'>Contact Us</h2>
-				<input onChange={(e) => console.log(e.target.value)}></input>
 				<form
 					onSubmit={handleSubmit}
 					className='mt-16 flex min-w-full flex-col gap-4 px-10 lg:mt-20 lg:min-w-[500px]'>
