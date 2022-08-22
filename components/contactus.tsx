@@ -70,8 +70,8 @@ const ContactUs: React.FC = () => {
 		[inputs, handleServerResponse]
 	);
 	return (
-		<div className='bg-black text-white flex flex-col justify-center items-center pt-10 min-h-screen'>
-			<div className='flex-1 flex flex-col justify-center items-center pt-10 lg:pt-6'>
+		<div className='flex min-h-screen flex-col items-center justify-center bg-black pt-10 text-white'>
+			<div className='flex flex-1 flex-col items-center justify-center pt-10 lg:pt-6'>
 				<div className='pb-10'>
 					<Image
 						src='/assets/logo.png'
@@ -79,18 +79,18 @@ const ContactUs: React.FC = () => {
 						height={60}
 						alt='logo'></Image>
 				</div>
-				<h2 className='text-4xl fonnt-bold'>Contact Us</h2>
+				<h2 className='fonnt-bold text-4xl'>Contact Us</h2>
 				<form
 					onSubmit={handleSubmit}
-					className='flex flex-col gap-4 mt-16 px-10 lg:mt-20 min-w-full lg:min-w-[500px]'>
+					className='mt-16 flex min-w-full flex-col gap-4 px-10 lg:mt-20 lg:min-w-[500px]'>
 					{status.info.error && (
-						<div className='bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative role="alert"'>
+						<div className='role="alert" relative rounded border border-red-400 bg-red-100 px-4 py-3 text-red-700'>
 							<strong className='font-bold'>Error</strong>:{' '}
 							<span className='block sm:inline'>{status.info.msg}</span>
 						</div>
 					)}
 					{status.submitted ? (
-						<div className='text-white text-xl font-bold px-4 py-3 rounded relative role="alert"'>
+						<div className='role="alert" relative rounded px-4 py-3 text-xl font-bold text-white'>
 							Your message has been successfully sent. We will contact you very
 							soon!
 						</div>
@@ -103,7 +103,7 @@ const ContactUs: React.FC = () => {
 								maxLength={128}
 								type='text'
 								placeholder='Company name'
-								className='bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-2'
+								className='rounded-3xl border-2 border-white bg-black px-8 py-2 text-white outline-none'
 								onChange={handleOnChange}
 								value={inputs.companyName}
 							/>
@@ -114,7 +114,7 @@ const ContactUs: React.FC = () => {
 								required
 								maxLength={128}
 								placeholder='Your email'
-								className='bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-2'
+								className='rounded-3xl border-2 border-white bg-black px-8 py-2 text-white outline-none'
 								onChange={handleOnChange}
 								value={inputs.email}
 							/>
@@ -124,13 +124,13 @@ const ContactUs: React.FC = () => {
 								required
 								maxLength={1048576}
 								placeholder='Additional information'
-								className='bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-6 min-h-[16em]'
+								className='min-h-[16em] rounded-3xl border-2 border-white bg-black px-8 py-6 text-white outline-none'
 								onChange={handleOnChange}
 								value={inputs.message}></textarea>
-							<div className='text-center mt-10'>
+							<div className='mt-10 text-center'>
 								<button
 									type='submit'
-									className='bg-white text-black rounded-3xl px-8 py-2'>
+									className='rounded-3xl bg-white px-8 py-2 text-black'>
 									{!status.submitting
 										? !status.submitted
 											? 'Submit'
