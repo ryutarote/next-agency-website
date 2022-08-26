@@ -90,11 +90,11 @@ const ContactUs: React.FC = () => {
 						</div>
 					)}
 					{status.submitted ? (
-						<div className='role="alert" relative rounded px-4 py-3 text-xl font-bold text-white'>
-							<p className='break-normal p-4'>
+						<div className='role="alert" text- relative rounded px-4 py-3 text-center text-xl font-bold sm:text-left'>
+							<div className='break-normal p-4'>
 								Your message has been successfully sent. We will contact you
 								very soon!
-							</p>
+							</div>
 						</div>
 					) : (
 						<>
