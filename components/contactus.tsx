@@ -1,4 +1,4 @@
-import React, { useState, useCallback, FormEvent, ChangeEvent } from 'react';
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
 
@@ -58,7 +58,7 @@ const ContactUs: React.FC = () => {
 			setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
 			axios({
 				method: 'POST',
-				url: process.env.NEXT_PUBLIC_CONTACT_FORM_ENDPOINT_URL,
+				url: 'https://formspree.io/f/mjvzvnjk',
 				data: inputs,
 			}).then((_response) => {
 				handleServerResponse(
