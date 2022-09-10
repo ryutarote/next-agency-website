@@ -1,9 +1,9 @@
-.viewport:global(.is-draggable) {
+.viewport:global:hover {
 	cursor: move;
 	cursor: grab;
 }
 
-.viewport:global(.is-dragging) {
+.viewport:global:active {
 	cursor: grabbing;
 }
 
