@@ -33,13 +33,13 @@ const Carousel: React.FC<Props> = ({ children, className }) => {
 	const onSelect = useCallback(() => {
 		if (!emblaApi) return;
 		setSelectedIndex(emblaApi.selectedScrollSnap());
-	}, [emblaApi, selectedIndex]);
+	}, [emblaApi]);
 
 	useEffect(() => {
 		if (!emblaApi) return;
 		onSelect();
 		emblaApi.on('select', onSelect);
-	}, [emblaApi, selectedIndex]);
+	}, [emblaApi, onSelect, selectedIndex]);
 
 	return (
 		<CarsoulContext.Provider value={{ embla: emblaApi, selectedIndex }}>
