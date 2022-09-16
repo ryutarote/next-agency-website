@@ -21,7 +21,7 @@ const Works = () => (
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/tech.png'
+								src='/public/assets/works/tech.png'
 								layout='responsive'
 								width={800}
 								height={800}
@@ -42,7 +42,7 @@ const Works = () => (
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/teamwork.png'
+								src='/public/assets/works/teamwork.png'
 								layout='responsive'
 								width={800}
 								height={800}
@@ -65,7 +65,7 @@ const Works = () => (
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/customer-scuccess.png'
+								src='/public/assets/works/customer-scuccess.png'
 								layout='responsive'
 								width={800}
 								height={800}
