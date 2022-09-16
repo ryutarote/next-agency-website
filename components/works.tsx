@@ -65,7 +65,7 @@ const Works = () => (
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/customer-scuccess.png'
+								src='/assets/works/credentials.jpg'
 								layout='responsive'
 								width={800}
 								height={800}
