@@ -15,13 +15,13 @@ const Works = () => (
 					<WorkContainer>
 						<WorkLeft progress={progress}>
 							<div>We guide</div>
-							<div className='text-4xl md:text-5xl font-semibold tracking-tight'>
+							<div className='text-4xl font-semibold tracking-tight md:text-5xl'>
 								many life&apos;s
 							</div>
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/lifes.jpg'
+								src='/assets/works/tech.png'
 								layout='responsive'
 								width={800}
 								height={800}
@@ -36,13 +36,13 @@ const Works = () => (
 					<WorkContainer>
 						<WorkLeft progress={progress}>
 							<div>We built</div>
-							<div className='text-4xl md:text-5xl font-semibold tracking-tight'>
+							<div className='text-4xl font-semibold tracking-tight md:text-5xl'>
 								many credential&apos;s
 							</div>
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/credentials.jpg'
+								src='/assets/works/customer-scuccess.png'
 								layout='responsive'
 								width={800}
 								height={800}
@@ -59,13 +59,13 @@ const Works = () => (
 					<WorkContainer>
 						<WorkLeft progress={progress}>
 							<div>We led</div>
-							<div className='text-4xl md:text-5xl font-semibold tracking-tight'>
+							<div className='text-4xl font-semibold tracking-tight md:text-5xl'>
 								many team&apos;s
 							</div>
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/teams.jpg'
+								src='/assets/works/creater.png'
 								layout='responsive'
 								width={800}
 								height={800}
