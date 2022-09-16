@@ -5,18 +5,18 @@ import s from '../styles/trustedby.module.css';
 
 const TrustedBy: React.FC = () => (
 	<section
-		className={`bg-white min-h-screen flex flex-col justify-center gap-16 md:gap-32 ${s.bg}`}>
+		className={`flex min-h-screen flex-col justify-center gap-16 bg-white md:gap-32 ${s.bg}`}>
 		<div className='flex-1'></div>
-		<div className='flex flex-col justify-center items-center'>
-			<h3 className='text-xl mb-10 font-bold text-center'>
+		<div className='flex flex-col items-center justify-center'>
+			<h3 className='mb-10 text-center text-xl font-bold'>
 				<span className='whitespace-nowrap'> Proved By</span>{' '}
 				<span className='whitespace-nowrap'> Our history</span>
 			</h3>
 			<ClientLogs />
 		</div>
-		<div className='flex flex-col justify-center items-center'>
+		<div className='flex flex-col items-center justify-center'>
 			<div className='container mx-auto lg:max-w-[70%] lg:px-10'>
-				<h3 className='text-3xl lg:text-4xl tracking-tight text-center px-10 !leading-[3.5erm]'>
+				<h3 className='SFMono-Regular px-10 text-center text-3xl italic !leading-[3.5erm] tracking-tight lg:text-4xl'>
 					Better cooporation leaps your potential and powers
 				</h3>
 			</div>

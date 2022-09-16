@@ -21,14 +21,14 @@ const Masthead: React.FC = () => {
 	return (
 		<div
 			ref={refContainer}
-			className='min-h-screen flex flex-col items-center justify-center sticky top-0 -z-10'
+			className='sticky top-0 -z-10 flex min-h-screen flex-col items-center justify-center'
 			style={{ transform: `translateY(-${progress * 20}vh)` }}>
 			<video
 				autoPlay
 				loop
 				muted
 				playsInline
-				className='absolute w-full h-full object-cover'>
+				className='absolute h-full w-full object-cover'>
 				<source src='/assets/videoBg.mp4' type='video/mp4' />
 			</video>
 			<div
@@ -41,17 +41,19 @@ const Masthead: React.FC = () => {
 					height={342 / 3}
 					alt='logo'></Image>
 			</div>
-			<div className='p12-font-bold z-10 text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-center flex-1 flex items-center justify-center flex-col '>
-				<h1 className='mb-6 text-4xl xl:text-5xl'>Burnavy.inc</h1>
-				<h2 className='mb-2 text-2xl xl:text-3xl tracking-tight'>
+			<div className='p12-font-bold z-10 flex flex-1 flex-col items-center justify-center text-center text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] '>
+				<h1 className='text-bold mb-6 text-4xl font-bold xl:text-5xl'>
+					Burnavy.inc
+				</h1>
+				<h2 className='mb-2 text-2xl tracking-tight xl:text-3xl'>
 					<span>We bright</span>
 					{''}
 					<span> your future.</span>
 				</h2>
 			</div>
 			<div
-				className={`flex-grow-0 pb-20 md:pb-10 transition-all duration-1000 ${
-					imageLoaded ? 'opacity-100' : 'opacity-0 -translate-y-10'
+				className={`flex-grow-0 pb-20 transition-all duration-1000 md:pb-10 ${
+					imageLoaded ? 'opacity-100' : '-translate-y-10 opacity-0'
 				}`}>
 				<Image
 					src='/assets/down-arrow.png'

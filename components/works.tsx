@@ -14,9 +14,9 @@ const Works = () => (
 				renderContent={({ progress }) => (
 					<WorkContainer>
 						<WorkLeft progress={progress}>
-							<div>We guide</div>
+							<div>We unlock</div>
 							<div className='text-4xl font-semibold tracking-tight md:text-5xl'>
-								many life&apos;s
+								your potential
 							</div>
 						</WorkLeft>
 						<WorkRight progress={progress}>
@@ -35,6 +35,29 @@ const Works = () => (
 				renderContent={({ progress }) => (
 					<WorkContainer>
 						<WorkLeft progress={progress}>
+							<div>We led</div>
+							<div className='text-4xl font-semibold tracking-tight md:text-5xl'>
+								many team&apos;s
+							</div>
+						</WorkLeft>
+						<WorkRight progress={progress}>
+							<Image
+								src='/assets/works/teamwork.png'
+								layout='responsive'
+								width={800}
+								height={800}
+								alt='Teams'
+							/>
+						</WorkRight>
+					</WorkContainer>
+				)}></Tile>
+		</TileContent>
+		<TileContent>
+			<Tile
+				page={2}
+				renderContent={({ progress }) => (
+					<WorkContainer>
+						<WorkLeft progress={progress}>
 							<div>We built</div>
 							<div className='text-4xl font-semibold tracking-tight md:text-5xl'>
 								many credential&apos;s
@@ -47,29 +70,6 @@ const Works = () => (
 								width={800}
 								height={800}
 								alt='Credentials'
-							/>
-						</WorkRight>
-					</WorkContainer>
-				)}></Tile>
-		</TileContent>
-		<TileContent>
-			<Tile
-				page={2}
-				renderContent={({ progress }) => (
-					<WorkContainer>
-						<WorkLeft progress={progress}>
-							<div>We led</div>
-							<div className='text-4xl font-semibold tracking-tight md:text-5xl'>
-								many team&apos;s
-							</div>
-						</WorkLeft>
-						<WorkRight progress={progress}>
-							<Image
-								src='/assets/works/creater.png'
-								layout='responsive'
-								width={800}
-								height={800}
-								alt='Teams'
 							/>
 						</WorkRight>
 					</WorkContainer>
