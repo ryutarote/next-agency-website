@@ -2,7 +2,6 @@ import React from 'react';
 import { Tile, TileWrapper, TileBackground, TileContent } from './tile';
 import { WorkBackground, WorkContainer, WorkLeft, WorkRight } from './work';
 import Image from 'next/image';
-import cImg from '/Users/ryutarote/environment/agency-website/public/assets/works/credebility.png';
 
 const Works = () => (
 	<TileWrapper numOfPages={3}>
@@ -22,7 +21,7 @@ const Works = () => (
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src={cImg}
+								src='../public/assets/works/credebility.png'
 								layout='responsive'
 								width={800}
 								height={800}
