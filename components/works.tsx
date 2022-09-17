@@ -2,7 +2,7 @@ import React from 'react';
 import { Tile, TileWrapper, TileBackground, TileContent } from './tile';
 import { WorkBackground, WorkContainer, WorkLeft, WorkRight } from './work';
 import Image from 'next/image';
-import cImg from '../public/assets/works/credebility.png';
+import cImg from '/Users/ryutarote/environment/agency-website/public/assets/works/credebility.png';
 
 const Works = () => (
 	<TileWrapper numOfPages={3}>
