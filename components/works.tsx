@@ -2,6 +2,9 @@ import React from 'react';
 import { Tile, TileWrapper, TileBackground, TileContent } from './tile';
 import { WorkBackground, WorkContainer, WorkLeft, WorkRight } from './work';
 import Image from 'next/image';
+import pImg from '../public/assets/works/potential.png';
+import tImg from '../public/assets/works/teams.png';
+import cImg from '../public/assets/works/credentials.png';
 
 const Works = () => (
 	<TileWrapper numOfPages={3}>
@@ -21,7 +24,7 @@ const Works = () => (
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/potential.png'
+								src={pImg}
 								layout='responsive'
 								width={800}
 								height={800}
@@ -42,7 +45,7 @@ const Works = () => (
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/teams.png'
+								src={tImg}
 								layout='responsive'
 								width={800}
 								height={800}
@@ -65,7 +68,7 @@ const Works = () => (
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/credentials.png'
+								src={cImg}
 								layout='responsive'
 								width={800}
 								height={800}
