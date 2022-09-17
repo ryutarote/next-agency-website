@@ -2,9 +2,9 @@ import React from 'react';
 import { Tile, TileWrapper, TileBackground, TileContent } from './tile';
 import { WorkBackground, WorkContainer, WorkLeft, WorkRight } from './work';
 import Image from 'next/image';
-import pImg from '../public/assets/works/potential.png';
-import tImg from '../public/assets/works/teams.png';
-import cImg from '../public/assets/works/credentials.png';
+import pImg from '../public/assets/works/lifes.jpg';
+import tImg from '../public/assets/works/teams.jpg';
+import cImg from '../public/assets/works/credentials.jpg';
 
 const Works = () => (
 	<TileWrapper numOfPages={3}>
