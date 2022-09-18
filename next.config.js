@@ -1,5 +1,6 @@
-module.exports = {
-	images: {
-		formats: ['image/png', 'image/jpeg'],
-	},
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	reactStrictMode: true,
 };
+
+module.exports = nextConfig;
