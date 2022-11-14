@@ -26,64 +26,76 @@ const AboutUs: React.FC = () => {
 				<div className='mt-2'>the &ldquo;spec-ops&rdquo;</div>
 				<div className='mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20'>
 					<Member
-						id='marc'
-						name='Marc'
-						socialId='@mrousavy'
-						link='https://github.com/mrousavy'
+						id='Ben'
+						name='Ben'
+						socialId='2ben'
+						link='https://instagram.com/@benben'
 					/>
 					<Member
-						id='szymon'
-						name='Szymon'
-						socialId='@szymon20000'
-						link='https://github.com/Szymon20000'
+						id='Craig'
+						name='Craig'
+						socialId='opicraig77'
+						link='https://instagram.com/@craaaaiz'
 					/>
 					<Member
-						id='thomas'
-						name='Thomas'
-						socialId='@thomas-coldwell'
-						link='https://github.com/thomas-coldwell'
+						id='Marsha'
+						name='Marsha'
+						socialId='333Mar3'
+						link='https://instagram.com/@333Mar3'
 					/>
 					<Member
-						id='christoph'
-						name='Christoph'
-						socialId='@chrispader'
-						link='https://github.com/chrispader'
+						id='Nick'
+						name='Nick'
+						socialId='nickinzzop#'
+						link='https://instagram.com/@lickinnickin'
 					/>
 					<Member
-						id='hanno'
-						name='Hanno'
-						socialId='@hannojg'
-						link='https://github.com/hannojg'
+						id='Rhyle'
+						name='Rhyle'
+						socialId='$*$)Rhyle'
+						link='https://instagram.com/@rhylle'
 					/>
 					<Member
-						id='janic'
-						name='Janic'
-						socialId='@janicduplessis'
-						link='https://github.com/janicduplessis'
+						id='PJ'
+						name='PJ'
+						socialId='jpojj'
+						link='https://instagram.com/@jpojj'
 					/>
 					<Member
-						id='catalin'
-						name='Catalin'
-						socialId='@catalinmiron'
-						link='https://github.com/catalinmiron'
+						id='Whu'
+						name='Whu'
+						socialId='whuwhuwhu'
+						link='https://instagram.com/@whuzzzzzz'
 					/>
 					<Member
-						id='mo'
-						name='Mo'
-						socialId='@gorhom'
-						link='https://github.com/gorhom'
+						id='Jade'
+						name='Jade'
+						socialId='jkmllmkj'
+						link='https://instagram.com/@jjj@ade'
 					/>
 					<Member
-						id='eric'
-						name='Eric'
-						socialId='@ericvicenti'
-						link='https://github.com/ericvicenti'
+						id='Kurea'
+						name='Kurea'
+						socialId='k9r8a0'
+						link='https://instagram.com/@haisami'
 					/>
 					<Member
-						id='viktoria'
-						name='Viktoria'
-						socialId='@viktoria.psd'
-						link='https://github.com/viktoria.psd'
+						id='Tony'
+						name='Tony'
+						socialId='tttTbT16'
+						link='https://instagram.com/@tonoh'
+					/>
+					<Member
+						id='Samantha'
+						name='Samantha'
+						socialId='s00er88'
+						link='https://instagram.com/@s00er88'
+					/>
+					<Member
+						id='otto'
+						name='otto'
+						socialId='0ottoto0'
+						link='https://instagram.com/@o9oo8too'
 					/>
 				</div>
 			</div>
