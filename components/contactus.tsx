@@ -1,6 +1,6 @@
-import React, { useState, useCallback } from 'react';
-import Image from 'next/image';
 import axios from 'axios';
+import Image from 'next/image';
+import React, { useCallback, useState } from 'react';
 
 const ContactUs: React.FC = () => {
 	const [status, setStatus] = useState({
@@ -70,8 +70,8 @@ const ContactUs: React.FC = () => {
 		[inputs, handleServerResponse]
 	);
 	return (
-		<div className='flex min-h-screen flex-col items-center justify-center bg-black pt-10 text-white'>
-			<div className='flex flex-1 flex-col items-center justify-center pt-10 lg:pt-6'>
+		<div className='bg-black text-white flex flex-col items-center justify-center pt-10'>
+			<div className='flex-1 flex flex-col items-center justify-center pt-10 lg:pt-6'>
 				<div className='pb-10'>
 					<Image
 						src='/assets/logo.png'
@@ -79,10 +79,10 @@ const ContactUs: React.FC = () => {
 						height={60}
 						alt='logo'></Image>
 				</div>
-				<h2 className='fonnt-bold text-4xl'>Contact Us</h2>
+				<h2 className='text-4xl fonnt-bold'>Contact Us</h2>
 				<form
 					onSubmit={handleSubmit}
-					className='mt-16 flex min-w-full flex-col gap-4 px-10 lg:mt-20 lg:min-w-[500px]'>
+					className='flex flex-col gap-4 mt-16 px-10 lg:mt-20 min-w-full lg:min-w-[500px]'>
 					{status.info.error && (
 						<div className='role="alert" relative rounded border border-red-400 bg-red-100 px-4 py-3 text-red-700'>
 							<strong className='font-bold'>Error</strong>:{' '}
