@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from './carsoul';
+import Carousel from './carousel';
 import CarouselItem from './carousel-item';
 import Review from './review';
 
