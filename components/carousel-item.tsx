@@ -1,6 +1,6 @@
 import React, { useContext, useCallback } from 'react';
 import { CarouselContext } from './carousel';
-import styles from '../styles/carousel.module.css';
+import styles from './carousel.module.css';
 
 interface Props {
 	index: number;
