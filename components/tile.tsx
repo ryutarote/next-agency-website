@@ -3,16 +3,11 @@ import { ScrollContext } from '../utils/scroll-observer';
 
 interface WrapperProps {
 	numOfPages: number;
-	children?: React.ReactNode;
+	children: React.ReactNode;
 }
-
 interface TileContextValue {
 	numOfPages: number;
 	currentPage: number;
-}
-
-interface TileProps {
-	children: React.ReactNode;
 }
 
 export const TileContext = React.createContext<TileContextValue>({
@@ -40,6 +35,7 @@ export const TileWrapper: React.FC<WrapperProps> = ({
 				Math.max(-screenH, scrollY - offsetTop) + halfH
 			) / clientHeight;
 		currentPage = percentY * numOfPages;
+		//   progress = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
 	}
 
 	return (
@@ -47,18 +43,23 @@ export const TileWrapper: React.FC<WrapperProps> = ({
 			<div
 				ref={refContainer}
 				className='relative bg-black text-white'
-				style={{ height: numOfPages * 100 + 'vh' }}>
+				style={{
+					height: numOfPages * 100 + 'vh',
+				}}>
 				{children}
 			</div>
 		</TileContext.Provider>
 	);
 };
+type Child = {
+	children: React.ReactNode;
+};
 
-export const TileBackground: React.FC<TileProps> = ({ children }) => (
-	<div className='absolute h-hull w-hull'>{children}</div>
+export const TileBackground: React.FC<Child> = ({ children }) => (
+	<div className='absolute h-full w-full'>{children}</div>
 );
 
-export const TileContent: React.FC<TileProps> = ({ children }) => (
+export const TileContent: React.FC<Child> = ({ children }) => (
 	<div className='sticky top-0 h-screen overflow-hidden'>{children}</div>
 );
 
@@ -82,7 +83,7 @@ export const Tile: React.FC<Props> = ({ page, renderContent }) => {
 			ref={refContainer}
 			className='absolute top-0 w-full'
 			style={{
-				pointerEvents: progress >= 0 || progress >= 1 ? 'none' : undefined,
+				pointerEvents: progress <= 0 || progress >= 1 ? 'none' : undefined,
 				opacity,
 			}}>
 			{renderContent({ progress })}
