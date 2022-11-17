@@ -9,8 +9,6 @@ import {
 	WorkRight,
 } from './work';
 
-type Props = {};
-
 const Works = () => (
 	<TileWrapper numOfPages={4}>
 		<div className='absolute h-full w-full'>
