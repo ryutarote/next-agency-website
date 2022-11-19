@@ -9,6 +9,8 @@ import {
 	WorkRight,
 } from './work';
 
+type Props = {};
+
 const Works = () => (
 	<TileWrapper numOfPages={4}>
 		<div className='absolute h-full w-full'>
@@ -32,17 +34,18 @@ const Works = () => (
 						<WorkRight progress={progress}>
 							<div className='relative'>
 								<div className='absolute rounded-[6%] w-[84.5%] left-[7.7%] top-[2.7%] overflow-hidden'>
-									<Image
-										src='/assets/works/potentials.jpg'
-										layout='responsive'
-										width={840}
-										className='absolute top-0 left-0 right-0 bottom-0'
-										height={1620}
-										alt='Stori'
-									/>
+									<video
+										id='coinbase-video'
+										autoPlay
+										loop
+										muted
+										playsInline
+										width='100%'>
+										<source src='/assets/works/stori.mp4' type='video/mp4' />
+									</video>
 								</div>
 								<Image
-									src='/assets/works/potentials.jpg'
+									src='/assets/iphone-bezels.webp'
 									layout='responsive'
 									width={840}
 									className='absolute top-0 left-0 right-0 bottom-0'
@@ -60,23 +63,30 @@ const Works = () => (
 						<WorkLeft progress={progress}>
 							<span>We made</span>
 							<div className='text-4xl md:text-5xl font-semibold tracking-tight'>
-								<WorkLink href=''>Coinbase Wallet</WorkLink> faster.
+								<WorkLink href='https://www.coinbase.com/'>
+									Coinbase Wallet
+								</WorkLink>{' '}
+								faster.
 							</div>
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<div className='relative'>
 								<div className='absolute rounded-[6%] w-[84.5%] left-[7.7%] top-[2.7%] overflow-hidden'>
-									<Image
-										src='/assets/works/credentials.jpg'
-										layout='responsive'
-										width={840}
-										className='absolute top-0 left-0 right-0 bottom-0'
-										height={1620}
-										alt='Stori'
-									/>
+									<video
+										id='coinbase-video'
+										autoPlay
+										loop
+										muted
+										playsInline
+										width='100%'>
+										<source
+											src='/assets/works/coinbase-wallet.mp4'
+											type='video/mp4'
+										/>
+									</video>
 								</div>
 								<Image
-									src='/assets/works/client.jpg'
+									src='/assets/iphone-bezels.webp'
 									layout='responsive'
 									width={840}
 									className='absolute top-0 left-0 right-0 bottom-0'
@@ -94,13 +104,13 @@ const Works = () => (
 						<WorkLeft progress={progress}>
 							<span>We built</span>
 							<div className='text-4xl md:text-5xl font-semibold tracking-tight'>
-								<WorkLink href=''>Pink Panda</WorkLink>
+								<WorkLink href='https://pinkpanda.io/'>Pink Panda</WorkLink>
 								&#x27;s app.
 							</div>
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/creator.png'
+								src='/assets/works/pinkpanda.png'
 								layout='responsive'
 								width={840}
 								height={1620}
@@ -116,12 +126,13 @@ const Works = () => (
 						<WorkLeft progress={progress}>
 							<span>We helped</span>
 							<div className='text-4xl md:text-5xl font-semibold tracking-tight'>
-								<WorkLink href=''>Showtime</WorkLink> ship faster.
+								<WorkLink href='https://showtime.io/'>Showtime</WorkLink> ship
+								faster.
 							</div>
 						</WorkLeft>
 						<WorkRight progress={progress}>
 							<Image
-								src='/assets/works/work.png'
+								src='/assets/works/showtime.png'
 								layout='responsive'
 								width={840}
 								height={1620}
