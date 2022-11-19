@@ -37,7 +37,7 @@ const Masthead: React.FC = () => {
       ${imageLoaded ? 'opacity-100' : 'opacity-0'}
       `}>
 				<Image
-					src='/assets/logo.png'
+					src='/assets/'
 					width={412 / 3}
 					height={342 / 3}
 					alt='logo'></Image>
