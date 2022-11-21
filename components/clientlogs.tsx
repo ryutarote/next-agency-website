@@ -100,8 +100,6 @@ const ClientLogs: React.FC = () => (
 					objectFit='contain'
 				/>
 			</SliderItem>
-		</SliderContainer>
-		<SliderContainer className='' contentWidth={1290} initialOffSet={0}>
 			<SliderItem width={100}>
 				<Image
 					src='/assets/customer/const.png'
