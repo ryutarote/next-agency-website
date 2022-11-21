@@ -1,14 +1,12 @@
-// Need to fix animation logic
+import React, { useCallback, useRef, useEffect } from 'react';
 
-import { useCallback, useRef, useEffect } from 'react';
-
-const useAnimationFrame = (enabled: boolean, callBack: () => void) => {
+const useAnimationFrame = (enabled: boolean, callback: () => void) => {
 	const requestRef = useRef<ReturnType<typeof requestAnimationFrame>>();
 
 	const animate = useCallback(() => {
-		callBack();
+		callback();
 		requestRef.current = requestAnimationFrame(animate);
-	}, [callBack]);
+	}, [callback]);
 
 	useEffect(() => {
 		if (enabled) {
