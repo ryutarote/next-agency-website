@@ -84,7 +84,7 @@ const AboutUs: React.FC = () => {
 						socialId='tttTbT16'
 						link='https://instagram.com/@tonoh'
 					/>
-					<Member
+					{/* <Member
 						id='Samantha'
 						name='Samantha'
 						socialId='s00er88'
@@ -95,7 +95,7 @@ const AboutUs: React.FC = () => {
 						name='otto'
 						socialId='0ottoto0'
 						link='https://instagram.com/@o9oo8too'
-					/>
+					/> */}
 				</div>
 			</div>
 		</section>
