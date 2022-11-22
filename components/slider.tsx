@@ -3,24 +3,25 @@ import { SizeContext } from '../utils/size-observer';
 import useAnimationFrame from './use-animation';
 
 interface Props {
-	children: React.ReactNode;
-	initialOffSet: number;
+	initialOffsetX: number;
 	className: string;
 	contentWidth: number;
+	children: React.ReactNode;
 }
 
 const SliderContainer: React.FC<Props> = ({
 	children,
-	initialOffSet,
+	initialOffsetX,
 	className,
 	contentWidth,
 }) => {
 	const { innerWidth } = useContext(SizeContext);
-	const refScrollX = useRef<number>(initialOffSet);
+	const refScrollX = useRef<number>(initialOffsetX);
 	const refContainer = useRef<HTMLDivElement>(null);
 	const refContent = useRef<HTMLDivElement>(null);
 
-	const enabled = innerWidth < contentWidth;
+	//   const enabled = innerWidth < contentWidth;
+	const enabled = true;
 
 	useAnimationFrame(
 		enabled,
@@ -45,22 +46,24 @@ const SliderContainer: React.FC<Props> = ({
 			<div ref={refContent} className='inline-block'>
 				{children}
 			</div>
-			<div className={enabled ? 'inline-block' : 'hidden'}>{children}</div>
+			<div className={enabled ? 'inline-block mb-5' : 'hidden'}>{children}</div>
 		</div>
 	);
 };
 
 interface ItemProps {
-	children: React.ReactNode;
 	width: number;
+	children: React.ReactNode;
 }
 
-export const SliderItem: React.FC<ItemProps> = ({ children, width }) => (
-	<div
-		className='inline-flex justify-center items-center mx-4'
-		style={{ width }}>
-		{children}
-	</div>
-);
+export const SliderItem: React.FC<ItemProps> = ({ children, width }) => {
+	return (
+		<div
+			className='inline-flex justify-center items-center mx-4'
+			style={{ width }}>
+			{children}
+		</div>
+	);
+};
 
 export default SliderContainer;
