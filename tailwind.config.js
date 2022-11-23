@@ -12,7 +12,7 @@ module.exports = {
 				'half-screen': '50vh',
 			},
 			fontFamily: {
-				mplus: ["'M PLUS Rounded 1c'", 'Verdana', 'sans-serif'],
+				anton: ["'Anton'", 'sans-serif'],
 			},
 		},
 	},
