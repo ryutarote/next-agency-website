@@ -16,7 +16,7 @@ const TrustedBy: React.FC = () => (
 		</div>
 		<div className='flex flex-col items-center justify-center'>
 			<div className='container mx-auto lg:max-w-[70%] lg:px-10'>
-				<h3 className='SFMono-Regular px-10 text-center text-3xl italic !leading-[3.5erm] tracking-tight lg:text-4xl'>
+				<h3 className='font-mplus font-bold px-10 text-center text-3xl italic !leading-[3.5erm] tracking-tight lg:text-4xl'>
 					Better cooporation leaps your potential and powers
 				</h3>
 			</div>
